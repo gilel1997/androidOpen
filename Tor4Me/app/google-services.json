@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "148185896634",
+    "firebase_url": "https://tor4me-b43d2-default-rtdb.firebaseio.com",
+    "project_id": "tor4me-b43d2",
+    "storage_bucket": "tor4me-b43d2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:148185896634:android:3c8a1cf03d8f8646e2d483",
+        "android_client_info": {
+          "package_name": "com.example.tor4me"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDnxwWC95kX3i5X8g6nsk8N9iGjUgBDL5Y"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
