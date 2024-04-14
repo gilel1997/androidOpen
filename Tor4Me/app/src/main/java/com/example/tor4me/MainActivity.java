@@ -10,13 +10,13 @@ import android.widget.Button;
 public class MainActivity extends AppCompatActivity {
 
     private Button createMeeting;
-    private Button changeMeeting;
-    private Button cancelMeeting;
+    private Button listHours;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         createMeeting = findViewById(R.id.btn_createMeeting);
+        listHours = findViewById(R.id.btn_Meetings);
 
         //onClick
 
@@ -27,10 +27,20 @@ public class MainActivity extends AppCompatActivity {
                 goToCreateMeeting(v);
             }
             });
-
+        listHours.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v)
+            {
+                goToMeetings(v);
+            }
+        });
     }
     public void goToCreateMeeting(View view) {
         Intent intent = new Intent(MainActivity.this, CreateMeetingActivity.class);
+        startActivity(intent);
+    }
+    public void goToMeetings(View view) {
+        Intent intent = new Intent(MainActivity.this, MeetingsActivity.class);
         startActivity(intent);
     }
 }

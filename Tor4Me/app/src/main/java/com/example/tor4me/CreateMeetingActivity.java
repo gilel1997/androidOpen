@@ -5,7 +5,6 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.GridView;
 import android.widget.Spinner;
@@ -87,7 +86,7 @@ public class CreateMeetingActivity extends AppCompatActivity {
         {
             dates.add(String.valueOf(i));
         }
-        calendarGridView = findViewById(R.id.calendarGridView);
+        calendarGridView = findViewById(R.id.calendarGridView2);
         calendarAdapter = new CalendarAdapter(this, dates);
         calendarGridView.setAdapter(calendarAdapter);
     }

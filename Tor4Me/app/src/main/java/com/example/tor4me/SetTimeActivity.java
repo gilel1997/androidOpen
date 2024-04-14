@@ -50,7 +50,7 @@ public class SetTimeActivity extends AppCompatActivity {
         year = intent.getStringExtra("selected_year");
         HoursGridView = findViewById(R.id.Hours_gridview);
 
-        ReadData(month, Integer.parseInt(day), Integer.parseInt(year));
+        ReadData();
         List<MeetingsData> meetingsDataLst = new ArrayList<>();
         mDatabase.addValueEventListener(new ValueEventListener() {
             @Override
@@ -117,7 +117,7 @@ public class SetTimeActivity extends AppCompatActivity {
 
         mDatabase.child("meetings").setValue(meetingsData);
     }
-    public void ReadData(String month, int day, int year)
+    public void ReadData()
     {
         mDatabase.child("hours of meetings").get().addOnCompleteListener(new OnCompleteListener<DataSnapshot>() {
             @Override

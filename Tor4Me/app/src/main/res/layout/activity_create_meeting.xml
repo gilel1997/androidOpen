@@ -4,7 +4,22 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/black"
     tools:context=".CreateMeetingActivity">
+
+    <TextView
+        android:id="@+id/text_title2"
+        android:layout_width="288dp"
+        android:layout_height="83dp"
+        android:text="choose a date"
+        android:textColor="@color/white"
+        android:textSize="35sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.02" />
 
     <Spinner
         android:id="@+id/monthSpinner"
@@ -13,6 +28,7 @@
         android:layout_gravity="center_horizontal"
         android:layout_marginTop="28dp"
         android:entries="@array/months"
+        android:background="@color/white"
         app:layout_constraintBottom_toTopOf="@+id/calendarGridView"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.088"
@@ -26,6 +42,7 @@
         android:layout_height="48dp"
         android:layout_gravity="center_horizontal"
         android:entries="@array/years"
+        android:background="@color/white"
         app:layout_constraintBottom_toTopOf="@+id/calendarGridView"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.839"
@@ -39,6 +56,7 @@
         android:layout_height="364dp"
         android:horizontalSpacing="2dp"
         android:numColumns="7"
+        android:background="@color/white"
         android:stretchMode="columnWidth"
         android:verticalSpacing="2dp"
         app:layout_constraintBottom_toBottomOf="parent"

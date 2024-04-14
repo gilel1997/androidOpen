@@ -49,6 +49,10 @@ public class LoginActivity extends AppCompatActivity {
             public void onClick(View v) {
                 String email = emailEditText.getText().toString();
                 String password = passwordEditText.getText().toString();
+                if(email.equals("Admin") && password.equals("Admin"))
+                {
+                    GoToAdminMain();
+                }
                 CheckLogin(email, password);
             }
         });
@@ -102,6 +106,12 @@ public class LoginActivity extends AppCompatActivity {
         Intent intent = new Intent(LoginActivity.this, MainActivity.class);
         startActivity(intent);
         finish(); // Optional: Call finish() if you want to finish the LoginActivity and prevent going back to it with the back button
+    }
+    private void GoToAdminMain()
+    {
+        Intent intent = new Intent(LoginActivity.this, MainActivity.class);
+        startActivity(intent);
+        finish();
     }
 
 
